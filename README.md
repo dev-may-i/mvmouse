@@ -1,4 +1,4 @@
-# mvmouse - move the mouse pointer to prevent te screensaver to lock the screen
+# mvmouse - move the mouse pointer to prevent the screensaver locking the screen
 
 Start this script in a separate window. 
 
