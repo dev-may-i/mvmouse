@@ -22,7 +22,6 @@ def timeFlux():
   tf = t + t_flux
   if (tf) < 0:
     tf = t
-  # print("\nt: " + str(t) + " flux: " + str(t_flux) + " new: " + str(tf) )
   return(tf)
 
 def getCursorPosition():
@@ -33,9 +32,6 @@ def getRanNum():
   rnd_x = random.randint(0,9)
   rnd_y = random.randint(0,9)
   return(rnd_x,rnd_y)
-   
-def mvCursor(x,y):
-  pyautogui.moveTo(int(x), int(y) )   
     
 try:
   while True:
@@ -53,7 +49,6 @@ try:
     else:
         y = y - rnd_y
     
-    #mvCursor(x,y) 
     pyautogui.moveTo(x,y)
     x,y =  getCursorPosition()
     positionStr = "t: " + str(tf) + " X: " + str(x).rjust(4) + " Y: " + str(y).rjust(4)
